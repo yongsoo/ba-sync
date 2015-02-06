@@ -1,0 +1,14 @@
+{
+  "name": "ba-sync",
+  "version": "0.0.1",
+  "description": "Bank of America bridge that syncs payments from a gateway to Bank of America and vice versa",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha -R spec test/**/*.js",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yongsoo/ba-sync.git"
+  }
+}

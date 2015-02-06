@@ -1,0 +1,15 @@
+{
+  "config_version": "0.0.1",
+  "BA_ONLINE_USERNAME": "",
+  "BA_ONLINE_PASSWORD": "",
+  "PLAID_CLIENT_ID": "",
+  "PLAID_SECRET": "",
+  "PLAID_ACCESS_TOKEN": "",
+  "PLAID_USERNAME": "",
+  "PLAID_PASSWORD": "",
+  "USD_GATEWAY_URL": "",
+  "USD_GATEWAY_USERNAME": "",
+  "USD_GATEWAY_PASSWORD": "",
+  "USD_GATEWAY_HOT_WALLET": "",
+  "USD_GATEWAY_COLD_WALLET": ""
+}
