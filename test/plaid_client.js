@@ -1,6 +1,6 @@
 
-var PlaidClient = require(__dirname + '/../src/plaid_client')
-var config = require(__dirname + '/../src/config')
+var PlaidClient = require(__dirname+'/../src/plaid_client')
+var config = require(__dirname+'/../src/config')
 var assert = require('assert')
 
 describe('Plaid Client', function() {
@@ -18,10 +18,17 @@ describe('Plaid Client', function() {
     })
   });
 
-  it('should authenticate with B of A using valid username and password', function(done) {
-    plaidClient.authLogin()
+  it.skip('should authenticate with B of A using valid username and password, MFA info, and access token', function(done) {
+    plaidClient.authenticate()
       .then(function(response) {
-        assert.strictEqual(response.status, 201);
+        done();
+      })
+  })
+
+  it('should get list of transactions', function(done) {
+    plaidClient.getPayments()
+      .then(function(transactions) {
+        assert.strictEqual(transactions instanceof Array, true)
         done();
       })
   })
